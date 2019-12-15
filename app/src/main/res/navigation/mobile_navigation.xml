@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_candidates">
+
+    <fragment
+        android:id="@+id/navigation_candidates"
+        android:name="pe.edu.upc.smartvote.ui.candidates.CandidatesFragment"
+        android:label="@string/candidatesItemTabLabel"
+        tools:layout="@layout/fragment_candidates" />
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="pe.edu.upc.smartvote.ui.favorites.FavoritesFragment"
+        android:label="@string/FavoritesItemTabLabel"
+        tools:layout="@layout/fragment_favorites" />
+</navigation>
