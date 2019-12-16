@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_candidates"
-        android:name="pe.edu.upc.smartvote.ui.candidates.CandidatesFragment"
-        android:label="@string/candidatesItemTabLabel"
-        tools:layout="@layout/fragment_candidates" />
+        android:name="pe.edu.upc.smartvote.ui.politicalParties.PartiesFragment"
+        android:label="@string/partiesItemTabLabel"
+        tools:layout="@layout/fragment_parties" />
 
     <fragment
         android:id="@+id/navigation_favorites"

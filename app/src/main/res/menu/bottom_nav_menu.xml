@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navigation_candidates"
         android:icon="@drawable/ic_group_black_24dp"
-        android:title="@string/candidatesItemTabLabel" />
+        android:title="@string/partiesItemTabLabel" />
 
     <item
         android:id="@+id/navigation_favorites"
