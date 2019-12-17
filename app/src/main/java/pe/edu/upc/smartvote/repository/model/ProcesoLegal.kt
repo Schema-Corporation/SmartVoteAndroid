@@ -3,7 +3,7 @@ package pe.edu.upc.smartvote.repository.model
 
 import com.google.gson.annotations.SerializedName
 
-data class EstudiosNoUniversitario(
-    val grados: List<String>,
-    val institucion: String
+data class ProcesoLegal(
+    val delitos: List<String>,
+    val expediente: String
 )

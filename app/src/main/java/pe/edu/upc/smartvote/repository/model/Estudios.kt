@@ -5,11 +5,11 @@ import com.google.gson.annotations.SerializedName
 
 data class Estudios(
     @SerializedName("estudios_no_universitarios")
-    val estudiosNoUniversitarios: List<EstudiosNoUniversitario>,
+    val estudioNoUniversitarios: List<EstudioNoUniversitario>,
     @SerializedName("estudios_posgrado")
-    val estudiosPosgrado: List<EstudiosPosgrado>,
+    val estudioPosgrado: List<EstudioPosgrado>,
     @SerializedName("estudios_tecnicos")
-    val estudiosTecnicos: List<EstudiosTecnico>,
+    val estudioTecnicos: List<EstudioTecnico>,
     @SerializedName("estudios_universitarios")
-    val estudiosUniversitarios: List<EstudiosUniversitario>
+    val estudioUniversitarios: List<EstudioUniversitario>
 )

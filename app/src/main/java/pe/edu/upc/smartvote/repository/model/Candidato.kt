@@ -5,23 +5,23 @@ import com.google.gson.annotations.SerializedName
 
 data class Candidato(
     @SerializedName("cargos_eleccion_popular")
-    val cargosEleccionPopular: List<CargosEleccionPopular>,
+    val cargoEleccionPopular: List<CargoEleccionPopular>,
     @SerializedName("cargos_partidiarios")
-    val cargosPartidiarios: List<CargosPartidiario>,
+    val cargoPartidarios: List<CargoPartidario>,
     val dni: String,
     val estudios: Estudios,
     @SerializedName("experiencias_laborales")
-    val experienciasLaborales: List<ExperienciasLaborale>,
+    val experienciaLaborals: List<ExperienciaLaboral>,
     val nombre: String,
     val partido: String,
     @SerializedName("procesos_legales")
-    val procesosLegales: List<ProcesosLegale>,
+    val procesoLegals: List<ProcesoLegal>,
     val region: String,
-    val sanciones: List<Sancione>,
+    val sanciones: List<Sancion>,
     @SerializedName("sentencias_delitos_culposos")
-    val sentenciasDelitosCulposos: List<SentenciasDelitosCulposo>,
+    val sentenciaDelitosCulposos: List<SentenciaDelitosCulposos>,
     @SerializedName("sentencias_incumplimiento_obligaciones")
-    val sentenciasIncumplimientoObligaciones: List<SentenciasIncumplimientoObligacione>,
+    val sentenciaIncumplimientoObligaciones: List<SentenciaIncumplimientoObligaciones>,
     @SerializedName("url_photo")
     val urlPhoto: String,
     @SerializedName("url_photo_partido")

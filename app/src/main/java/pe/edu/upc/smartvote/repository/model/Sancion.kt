@@ -3,7 +3,7 @@ package pe.edu.upc.smartvote.repository.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Sancione(
+data class Sancion(
     val cargo: String,
     val descripcion: String,
     val estado: String,
