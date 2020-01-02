@@ -1,13 +1,13 @@
 package pe.edu.upc.smartvote.repository.model
 
+import java.io.Serializable
 
-import com.google.gson.annotations.SerializedName
 
-data class Sancion(
-    val cargo: String,
-    val descripcion: String,
-    val estado: String,
-    val motivo: String,
-    val periodo: String,
-    val sancion: String
-)
+class Sancion : Serializable {
+    var cargo: String = ""
+    var descripcion: String = ""
+    var estado: String = ""
+    var motivo: String = ""
+    var periodo: String = ""
+    var sancion: String = ""
+}

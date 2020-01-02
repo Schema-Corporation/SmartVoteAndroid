@@ -2,11 +2,12 @@ package pe.edu.upc.smartvote.repository.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class SentenciaDelitosCulposos(
-    val delito: String,
-    val expediente: String,
+class SentenciaDelitosCulposos : Serializable {
+    var delito: String = ""
+    var expediente: String = ""
     @SerializedName("organo_judicial")
-    val organoJudicial: String,
-    val pena: String
-)
+    var organoJudicial: String = ""
+    var pena: String = ""
+}

@@ -1,10 +1,10 @@
 package pe.edu.upc.smartvote.repository.model
 
 
-import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class ExperienciaLaboral(
-    val cargo: String,
-    val periodo: String,
-    val ubicacion: String
-)
+class ExperienciaLaboral : Serializable {
+    var cargo: String = ""
+    var periodo: String = ""
+    var ubicacion: String = ""
+}

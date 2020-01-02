@@ -1,10 +1,10 @@
 package pe.edu.upc.smartvote.repository.model
 
+import java.io.Serializable
 
-import com.google.gson.annotations.SerializedName
 
-data class CargoPartidario(
-    val cargo: String,
-    val nombre: String,
-    val periodo: String
-)
+class CargoPartidario : Serializable {
+    val cargo: String = ""
+    val nombre: String = ""
+    val periodo: String = ""
+}

@@ -1,9 +1,9 @@
 package pe.edu.upc.smartvote.repository.model
 
+import java.io.Serializable
 
-import com.google.gson.annotations.SerializedName
 
-data class EstudioPosgrado(
-    val grados: List<String>,
-    val institucion: String
-)
+class EstudioPosgrado : Serializable {
+    var grados: List<String> = ArrayList()
+    var institucion: String = ""
+}

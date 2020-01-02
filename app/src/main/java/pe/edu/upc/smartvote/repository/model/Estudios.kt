@@ -2,14 +2,15 @@ package pe.edu.upc.smartvote.repository.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class Estudios(
+class Estudios : Serializable {
     @SerializedName("estudios_no_universitarios")
-    val estudioNoUniversitarios: List<EstudioNoUniversitario>,
+    var estudioNoUniversitarios: List<EstudioNoUniversitario> = ArrayList()
     @SerializedName("estudios_posgrado")
-    val estudioPosgrado: List<EstudioPosgrado>,
+    var estudioPosgrado: List<EstudioPosgrado> = ArrayList()
     @SerializedName("estudios_tecnicos")
-    val estudioTecnicos: List<EstudioTecnico>,
+    var estudioTecnicos: List<EstudioTecnico> = ArrayList()
     @SerializedName("estudios_universitarios")
-    val estudioUniversitarios: List<EstudioUniversitario>
-)
+    var estudioUniversitarios: List<EstudioUniversitario> = ArrayList()
+}

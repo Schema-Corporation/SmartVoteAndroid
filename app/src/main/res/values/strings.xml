@@ -6,4 +6,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="partiesItemTabLabel">Partidos</string>
     <string name="FavoritesItemTabLabel">Favoritos</string>
+    <string name="loadingTemplate">Loading...</string>
 </resources>

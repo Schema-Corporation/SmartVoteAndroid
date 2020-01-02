@@ -2,28 +2,29 @@ package pe.edu.upc.smartvote.repository.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class Candidato(
+class Candidato : Serializable {
     @SerializedName("cargos_eleccion_popular")
-    val cargoEleccionPopular: List<CargoEleccionPopular>,
+    var cargoEleccionPopular: List<CargoEleccionPopular> = ArrayList()
     @SerializedName("cargos_partidiarios")
-    val cargoPartidarios: List<CargoPartidario>,
-    val dni: String,
-    val estudios: Estudios,
+    var cargoPartidarios: List<CargoPartidario> = ArrayList()
+    var dni: String = ""
+    var estudios: Estudios = Estudios()
     @SerializedName("experiencias_laborales")
-    val experienciaLaborals: List<ExperienciaLaboral>,
-    val nombre: String,
-    val partido: String,
+    var experienciaLaborals: List<ExperienciaLaboral> = ArrayList()
+    var nombre: String = ""
+    var partido: String = ""
     @SerializedName("procesos_legales")
-    val procesoLegals: List<ProcesoLegal>,
-    val region: String,
-    val sanciones: List<Sancion>,
+    var procesoLegals: List<ProcesoLegal> = ArrayList()
+    var region: String = ""
+    var sanciones: List<Sancion> = ArrayList()
     @SerializedName("sentencias_delitos_culposos")
-    val sentenciaDelitosCulposos: List<SentenciaDelitosCulposos>,
+    var sentenciaDelitosCulposos: List<SentenciaDelitosCulposos> = ArrayList()
     @SerializedName("sentencias_incumplimiento_obligaciones")
-    val sentenciaIncumplimientoObligaciones: List<SentenciaIncumplimientoObligaciones>,
+    var sentenciaIncumplimientoObligaciones: List<SentenciaIncumplimientoObligaciones> = ArrayList()
     @SerializedName("url_photo")
-    val urlPhoto: String,
+    var urlPhoto: String = ""
     @SerializedName("url_photo_partido")
-    val urlPhotoPartido: String
-)
+    var urlPhotoPartido: String = ""
+}

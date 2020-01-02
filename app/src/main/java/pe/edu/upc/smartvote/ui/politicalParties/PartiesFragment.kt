@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import pe.edu.upc.smartvote.R
+import pe.edu.upc.smartvote.networking.cache.CacheList
 
 class PartiesFragment : Fragment() {
 
@@ -18,10 +19,6 @@ class PartiesFragment : Fragment() {
     private lateinit var partiesRecyclerView: RecyclerView
     private lateinit var partiesAdapter: RecyclerView.Adapter<*>
     private lateinit var partiesLayoutManager: RecyclerView.LayoutManager
-    private val politicalParties = listOf(
-        "Party 1", "Party 2", "Party 3", "Party 4", "Party 5",
-        "Party 6", "Party 7", "Party 8", "Party 9", "Party 10", "Party 11", "Party 12", "Party 13"
-    )
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -33,6 +30,8 @@ class PartiesFragment : Fragment() {
         val textView: TextView = root.findViewById(R.id.text_parties)
         partiesRecyclerView = root.findViewById(R.id.recycler_view_parties)
         partiesLayoutManager = GridLayoutManager(this.context, 2)
+        val cacheMemory: CacheList = this.context?.applicationContext as CacheList
+        val politicalParties = cacheMemory.objects
         partiesAdapter = PartiesAdapter(politicalParties, this.context!!)
         partiesRecyclerView.adapter = partiesAdapter
         partiesRecyclerView.layoutManager = partiesLayoutManager

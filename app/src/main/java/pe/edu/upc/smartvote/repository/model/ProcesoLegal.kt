@@ -1,9 +1,9 @@
 package pe.edu.upc.smartvote.repository.model
 
 
-import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class ProcesoLegal(
-    val delitos: List<String>,
-    val expediente: String
-)
+class ProcesoLegal : Serializable {
+    val delitos: List<String> = ArrayList()
+    val expediente: String = ""
+}

@@ -13,7 +13,6 @@ import pe.edu.upc.smartvote.R
 class FavoritesFragment : Fragment() {
 
     private lateinit var favoritesViewModel: FavoritesViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
