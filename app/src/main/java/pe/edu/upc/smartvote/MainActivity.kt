@@ -26,11 +26,15 @@ class MainActivity : AppCompatActivity() {
                 startActivity(mainIntent)
                 finish()
             } else {
-                Snackbar.make(
+                val errorSnackBar = Snackbar.make(
                     this.textPlaceHolder,
                     "No se pudo cargar la lista de candidatos :(",
-                    Snackbar.LENGTH_SHORT
-                ).show()
+                    Snackbar.LENGTH_INDEFINITE
+                )
+                errorSnackBar.setAction(
+                    "Reintentar"
+                ) { recreate() }
+                errorSnackBar.show()
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data)
